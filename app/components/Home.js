@@ -91,7 +91,7 @@ export default class Home extends Component<Props, State> {
     const hash = event.target.value;
 
     remote.shell.openExternal(
-      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(hash)}`
+      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(hash)}#blockchain_transaction`
     );
   };
 
