@@ -133,7 +133,7 @@ export default class Search extends Component<Props, States> {
     const { query } = this.state;
 
     remote.shell.openExternal(
-      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(query)}`
+      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(query)}#blockchain_transaction`
     );
   };
 
@@ -141,7 +141,7 @@ export default class Search extends Component<Props, States> {
     const hash = event.target.value;
 
     remote.shell.openExternal(
-      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(hash)}`
+      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(hash)}#blockchain_transaction`
     );
   };
 
